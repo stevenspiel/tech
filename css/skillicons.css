@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "skillicons";
+  src:url("../fonts/skillicons.eot");
+  src:url("../fonts/skillicons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/skillicons.woff") format("woff"),
+    url("../fonts/skillicons.ttf") format("truetype"),
+    url("../fonts/skillicons.svg#skillicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon] span.logo:before {
+  font-family: "skillicons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"] span.logo:before,
+[class*=" icon-"] span.logo:before {
+  font-family: "skillicons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-coffee span.logo:before {
+  content: "c";
+}
+.icon-css span.logo:before {
+  content: "s";
+}
+.icon-html span.logo:before {
+  content: "h";
+}
+.icon-jquery span.logo:before {
+  content: "j";
+}
+.icon-rails span.logo:before {
+  content: "R";
+}
+.icon-ux span.logo:before {
+  content: "x";
+}
+.icon-ui span.logo:before {
+  content: "i";
+}
+.icon-ruby span.logo:before {
+  content: "r";
+}
