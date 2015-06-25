@@ -523,7 +523,36 @@ a:-moz-any-link, -moz-link {
 
 #contact-modal p {
   line-height: 1.5em;
-  padding: 1em;
+  padding: 1em 0;
+}
+
+#contact-modal .profile-container {
+  margin: 2.7em auto 4.8em auto;
+}
+
+#contact-modal .profile-container .profile {
+  width: 31%;
+  min-width: 7em;
+  border-radius: 50%;
+}
+
+#contact-modal .columns {
+  width: auto;
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+#contact-modal .columns .info-set span {
+  display: inline-block;
+}
+
+#contact-modal .columns .info-set .title {
+  width: 2em;
+}
+
+#contact-modal .columns .info-set .info {
+  width: 11em;
 }
 
 /* Helpers */
