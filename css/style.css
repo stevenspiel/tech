@@ -1,5 +1,16 @@
 /* Main */
 
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
   font-family: Pier;
@@ -29,15 +40,6 @@ section {
 }
 
 /* Nav */
-
-#profile {
-  width: 80px;
-  border-radius: 5px;
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
 
 nav .brand-container {
   float: left;
@@ -76,8 +78,8 @@ nav .contact {
   z-index: 2;
   position: fixed;
   right: 0;
-  height: 2.3em;
-  width: 7em;
+  height: 2.8em;
+  width: 11em;
   margin: 1em 2em;
 }
 
@@ -124,6 +126,7 @@ nav .contact {
   height: 100%;
   position: fixed;
   z-index: -1;
+  /*transform: translateZ(-1px) scale(2);*/
   -webkit-filter: blur(10px);
   filter: blur(10px);
   filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
@@ -499,15 +502,16 @@ a:-moz-any-link, -moz-link {
   z-index:100;
   top: 0px;
   left: 0px;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   background: #000;
   display: none;
 }
 
 #contact-modal {
   font: Pier;
-  width: 600px;
+  width: 50%;
+  max-width: 475px;
   padding: 30px;
   display: none;
   background: #FFF;
