@@ -2742,3 +2742,104 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
 }
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+  54.9% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+  55% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: translateY(3px);
+  }
+  85% {
+    -webkit-transform: translateY(-3px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes bounceInDown {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+  54.9% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+  55% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+  }
+  70% {
+    opacity: 1;
+    -moz-transform: translateY(3px);
+  }
+  85% {
+    -moz-transform: translateY(-3px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes bounceInDown {
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+  54.9% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+  55% {
+    opacity: 0;
+    -o-transform: translateY(-20px);
+  }
+  70% {
+    opacity: 1;
+    -o-transform: translateY(3px);
+  }
+  85% {
+    -o-transform: translateY(-3px);
+  }
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  54.9% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  55% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(3px);
+  }
+  85% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
