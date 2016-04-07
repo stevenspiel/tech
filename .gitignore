@@ -6,3 +6,4 @@ cgi-bin/*
 500.php
 500.shtml
 sftp-config.json
+/.idea/
