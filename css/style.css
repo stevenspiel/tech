@@ -506,6 +506,22 @@ a:-moz-any-link, -moz-link {
   filter: none;
 }
 
+/* DISCLAIMERS */
+
+.disclaimers {
+  margin: 4rem 0 2rem 0;
+  text-align: center;
+}
+
+.disclaimers a {
+  padding: 0 2rem;
+}
+
+.disclaimers a:hover,
+.disclaimers a:active {
+  color: #222222;
+}
+
 /* Modal */
 
 #lean_overlay {
@@ -586,5 +602,45 @@ a:-moz-any-link, -moz-link {
 
 .left {
   float: left;
+}
+
+/* DICLAIMERS */
+
+body.bland {
+  text-align: left;
+  line-height: 1.3em;
+  background: #222222;
+  color: #dddddd;
+}
+
+.bland a {
+  font-weight: 500;
+}
+
+.bland a:hover,
+.bland a:active {
+  color: #ffffff;
+}
+
+.nav-home {
+  margin-bottom: 3rem;
+}
+
+#skinny-content {
+  max-width: 800px;
+  padding: 6rem 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+}
+
+#skinny-content h1 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+#skinny-content p {
+  margin-bottom: 3rem;
 }
 
