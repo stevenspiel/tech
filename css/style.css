@@ -475,15 +475,15 @@ a:-moz-any-link, -moz-link {
 .icon a.github { background: url('../images/github-logo-white.png') no-repeat scroll 47% / cover; }
 .icon a.email { background: url('../images/email-logo-white.png') no-repeat scroll 47% / cover; }
 
-#contact .icons {
+#contact-icons .icons {
   margin: 4vh 10vw;
 }
 
-#contact .icons .icon {
+#contact-icons .icons .icon {
   width: 13%;
 }
 
-#contact .icons .icon a {
+#contact-icons .icons .icon a {
   width: 3.6vw;
   height: 3.6vw;
   border-radius: 12px;
@@ -501,7 +501,7 @@ a:-moz-any-link, -moz-link {
   filter: invert(100%);
 }
 
-#contact .icons .icon a:hover {
+#contact-icons .icons .icon a:hover {
   -webkit-filter: invert(0%);
   -moz-filter: invert(0%);
   -o-filter: invert(0%);
