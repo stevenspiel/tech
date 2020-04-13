@@ -1,4 +1,4 @@
-/* Main */
+/* MAIN */
 
 @font-face {
   font-family: Pier;
@@ -23,7 +23,7 @@ html * {
 
 body {
   text-align: center;
-  font-family: Pier;
+  font-family: Pier, sans-serif;
 }
 
 h1, h2 {
@@ -44,8 +44,7 @@ a:hover {
 }
 
 section {
-  padding: 3vw;
-  padding-bottom: 0;
+  padding: 3vw 3vw 0;
 }
 
 /* Nav */
@@ -101,7 +100,7 @@ nav .contact {
   color: #333;
 }
 
-/* Landing Image */
+/* LANDING IMAGE */
 
 #main {
   padding: 0;
@@ -201,7 +200,7 @@ a:-moz-any-link, -moz-link {
   -webkit-animation-iteration-count:infinite;
 }
 
-/* Skills */
+/* SKILLS */
 
 .icons a.icon {
   display: inline-block;
@@ -229,19 +228,20 @@ a:-moz-any-link, -moz-link {
 #skills .icons a.icon {
   cursor: default;
   color: #ffffff;
+  vertical-align: middle;
 }
 
-#skills .icons span {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-}
-
-#skills .icons span.logo {
-  font-size: 5em;
+#skills .icons img {
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
   text-align: center;
-  height: 1.6em;
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%) brightness(2);
 }
 
 #skills .icons span.text {
@@ -253,134 +253,137 @@ a:-moz-any-link, -moz-link {
   opacity: 0;
 }
 
-#skills .icons a.icon:hover span.text {
-  opacity: 1;
-}
-
 #skills a.icon {
-  -webkit-transition: color 100;
-  -moz-transition: color 100;
-  -o-transition: color 100;
-  transition: color 100;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
 }
 
-#skills a.icon-ruby:hover { color: #E14049 }
-#skills a.icon-ruby:hover span.logo {
-  -webkit-transform: translateX(-0.6em);
-  -moz-transform: translateX(-0.6em);
-  -o-transform: translateX(-0.6em);
-  transform: translateX(-0.6em);
+#skills a.icon:hover span { opacity: 1; }
+#skills a.icon:hover img { border-bottom-color: #3434; }
+
+#skills a.icon-ruby:hover span { color: #E14049 }
+#skills a.icon-ruby:hover img {
+  -webkit-transform: translateY(-1.5em);
+  -moz-transform: translateY(-1.5em);
+  -o-transform: translateY(-1.5em);
+  transform: translateY(-1.5em);
+  filter: grayscale(0) brightness(100%);
 }
 #skills a.icon-ruby:hover span.text {
-  -webkit-transform: translateX(1.6em);
-  -moz-transform: translateX(1.6em);
-  -o-transform: translateX(1.6em);
-  transform: translateX(1.6em);
+  -webkit-transform: translateY(2em);
+  -moz-transform: translateY(2em);
+  -o-transform: translateY(2em);
+  transform: translateY(2em);
 }
 
-#skills a.icon-rails span.text { margin-top: .25em; }
-#skills a.icon-rails:hover { color: #DF424D }
-#skills a.icon-rails:hover span.logo {
-  -webkit-transform: translateX(-0.5em);
-  -moz-transform: translateX(-0.5em);
-  -o-transform: translateX(-0.5em);
-  transform: translateX(-0.5em);
+#skills a.icon-rails:hover span { color: #E14049 }
+#skills a.icon-rails:hover img {
+  -webkit-transform: translateY(-1.4em);
+  -moz-transform: translateY(-1.4em);
+  -o-transform: translateY(-1.4em);
+  transform: translateY(-1.4em);
+  filter: grayscale(0) brightness(100%);
 }
 #skills a.icon-rails:hover span.text {
-  -webkit-transform: translateX(1.4em);
-  -moz-transform: translateX(1.4em);
-  -o-transform: translateX(1.4em);
-  transform: translateX(1.4em);
+  -webkit-transform: translateY(1.4em);
+  -moz-transform: translateY(1.4em);
+  -o-transform: translateY(1.4em);
+  transform: translateY(1.4em);
 }
 
-#skills a.icon-coffee:hover { color: #6C5B55 }
-#skills a.icon-coffee:hover span.logo {
-  -webkit-transform: translateX(-1.3em);
-  -moz-transform: translateX(-1.3em);
-  -o-transform: translateX(-1.3em);
-  transform: translateX(-1.3em);
+#skills a.icon-react:hover span { color: #92E9FC }
+#skills a.icon-react:hover img {
+  -webkit-transform: translateY(-1.2em);
+  -moz-transform: translateY(-1.2em);
+  -o-transform: translateY(-1.2em);
+  transform: translateY(-1.2em);
+  filter: grayscale(0) brightness(100%);
 }
-#skills a.icon-coffee:hover span.text {
-  -webkit-transform: translateX(1.6em);
-  -moz-transform: translateX(1.6em);
-  -o-transform: translateX(1.6em);
-  transform: translateX(1.6em);
-}
-
-#skills a.icon-jquery span.logo {
-  position: relative;
-  left: 0;
-}
-#skills a.icon-jquery:hover { color: #18B2EE }
-#skills a.icon-jquery:hover span.logo {
-  left: -1em;
-}
-#skills a.icon-jquery:hover span.text {
-  left: 2em;
+#skills a.icon-react:hover span.text {
+  -webkit-transform: translateY(1.2em);
+  -moz-transform: translateY(1.2em);
+  -o-transform: translateY(1.2em);
+  transform: translateY(1.2em);
 }
 
-#skills a.icon-html:hover { color: #ED663C }
-#skills a.icon-html:hover span.logo {
-  -webkit-transform: translateX(-0.8em);
-  -moz-transform: translateX(-0.8em);
-  -o-transform: translateX(-0.8em);
-  transform: translateX(-0.8em);
+#skills a.icon-ts:hover span { color: #3478C5 }
+#skills a.icon-ts:hover img {
+  -webkit-transform: translateY(-1.5em);
+  -moz-transform: translateY(-1.5em);
+  -o-transform: translateY(-1.5em);
+  transform: translateY(-1.5em);
+  filter: grayscale(0) brightness(100%);
 }
-#skills a.icon-html:hover span.text {
-  -webkit-transform: translateX(1.2em);
-  -moz-transform: translateX(1.2em);
-  -o-transform: translateX(1.2em);
-  transform: translateX(1.2em);
-}
-
-#skills a.icon-css:hover { color: #FDD93B }
-#skills a.icon-css:hover span.logo {
-  -webkit-transform: translateX(-0.6em);
-  -moz-transform: translateX(-0.6em);
-  -o-transform: translateX(-0.6em);
-  transform: translateX(-0.6em);
-}
-#skills a.icon-css:hover span.text {
-  -webkit-transform: translateX(1.4em);
-  -moz-transform: translateX(1.4em);
-  -o-transform: translateX(1.4em);
-  transform: translateX(1.4em);
+#skills a.icon-ts:hover span.text {
+  -webkit-transform: translateY(2.3em);
+  -moz-transform: translateY(2.3em);
+  -o-transform: translateY(2.3em);
+  transform: translateY(2.3em);
 }
 
-#skills a.icon-ui span.text,
-#skills a.icon-ux span.text {
-  text-align: left;
-  padding-left: 26%;
+#skills a.icon-dart:hover span { color: #5AB4F0 }
+#skills a.icon-dart:hover img {
+  -webkit-transform: translateY(-1.5em);
+  -moz-transform: translateY(-1.5em);
+  -o-transform: translateY(-1.5em);
+  transform: translateY(-1.5em);
+  filter: grayscale(0) brightness(100%);
 }
-#skills a.icon-ui:hover { color: #BDEB18 }
-#skills a.icon-ui:hover span.logo {
-  -webkit-transform: translateX(-0.7em);
-  -moz-transform: translateX(-0.7em);
-  -o-transform: translateX(-0.7em);
-  transform: translateX(-0.7em);
-}
-#skills a.icon-ui:hover span.text {
-  -webkit-transform: translateX(2.1em);
-  -moz-transform: translateX(2.1em);
-  -o-transform: translateX(2.1em);
-  transform: translateX(2.1em);
+#skills a.icon-dart:hover span.text {
+  -webkit-transform: translateY(2.5em);
+  -moz-transform: translateY(2.5em);
+  -o-transform: translateY(2.5em);
+  transform: translateY(2.5em);
 }
 
-#skills a.icon-ux:hover { color: #B0BAFE }
-#skills a.icon-ux:hover span.logo {
-  -webkit-transform: translateX(-0.85em);
-  -moz-transform: translateX(-0.85em);
-  -o-transform: translateX(-0.85em);
-  transform: translateX(-0.85em);
+#skills a.icon-flutter:hover span { color: #73C3F3 }
+#skills a.icon-flutter:hover img {
+  -webkit-transform: translateY(-1.5em);
+  -moz-transform: translateY(-1.5em);
+  -o-transform: translateY(-1.5em);
+  transform: translateY(-1.5em);
+  filter: grayscale(0) brightness(100%);
 }
-#skills a.icon-ux:hover span.text {
-  -webkit-transform: translateX(2.1em);
-  -moz-transform: translateX(2.1em);
-  -o-transform: translateX(2.1em);
-  transform: translateX(2.1em);
+#skills a.icon-flutter:hover span.text {
+  -webkit-transform: translateY(2.5em);
+  -moz-transform: translateY(2.5em);
+  -o-transform: translateY(2.5em);
+  transform: translateY(2.5em);
 }
 
-/* Showcase */
+#skills a.icon-aws:hover span { color: #E89338 }
+#skills a.icon-aws:hover img {
+  -webkit-transform: translateY(-1.7em);
+  -moz-transform: translateY(-1.7em);
+  -o-transform: translateY(-1.7em);
+  transform: translateY(-1.7em);
+  filter: grayscale(0) brightness(100%);
+}
+#skills a.icon-aws:hover span.text {
+  -webkit-transform: translateY(1.7em);
+  -moz-transform: translateY(1.7em);
+  -o-transform: translateY(1.7em);
+  transform: translateY(1.7em);
+}
+
+#skills a.icon-go:hover span { color: #78C6DE }
+#skills a.icon-go:hover img {
+  -webkit-transform: translateY(-1.5em);
+  -moz-transform: translateY(-1.5em);
+  -o-transform: translateY(-1.5em);
+  transform: translateY(-1.5em);
+  filter: grayscale(0) brightness(100%);
+}
+#skills a.icon-go:hover span.text {
+  -webkit-transform: translateY(1.5em);
+  -moz-transform: translateY(1.5em);
+  -o-transform: translateY(1.5em);
+  transform: translateY(1.5em);
+}
+
+/* SHOWCASE */
 
 #showcase {
   background: #fff;
@@ -463,7 +466,7 @@ a:-moz-any-link, -moz-link {
   color: #555555;
 }
 
-/* Contact */
+/* CONTACT */
 
 .icon a.fb { background: url('../images/fb-logo-white.png') no-repeat scroll 47% / cover; }
 .icon a.twitter { background: url('../images/twitter-logo-white.png') no-repeat scroll 47% / cover; }
@@ -522,7 +525,7 @@ a:-moz-any-link, -moz-link {
   color: #222222;
 }
 
-/* Modal */
+/* MODAL */
 
 #lean_overlay {
   position: fixed;
@@ -586,7 +589,7 @@ a:-moz-any-link, -moz-link {
   width: 11em;
 }
 
-/* Helpers */
+/* HELPERS */
 
 .hidden {
   opacity: 0;
@@ -604,7 +607,7 @@ a:-moz-any-link, -moz-link {
   float: left;
 }
 
-/* DICLAIMERS */
+/* MISC */
 
 body.bland {
   text-align: left;
